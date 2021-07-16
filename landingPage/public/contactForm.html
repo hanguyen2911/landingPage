@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Home</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script>
+    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+    <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+    <script src="apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
+    <script src="apps/body/4o300efCt-CXoq1JEC-sVReFz48.js">
+    </script>
+    <link rel="icon" href="https://livedemo00.template-help.com/wt_prod-22894/images/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" type="text/css"
+        href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800,900,900i%7CRoboto:400%7CRubik:100,400,700">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .ie-panel {
+            display: none;
+            background: #212121;
+            padding: 10px 0;
+            box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+            clear: both;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+        }
+
+        html.ie-10 .ie-panel,
+        html.lt-ie-10 .ie-panel {
+            display: block;
+        }
+    </style>
+    <link rel="stylesheet"
+        href="data:text/css;charset=utf-8;base64,Y2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJhLWJldHRlci1icm93c2VyIl0gewogIGRpc3BsYXk6IGJsb2NrOwogIGJhY2tncm91bmQ6ICM0NTQ4NGQ7CiAgY29sb3I6ICNmZmY7CiAgbGluZS1oZWlnaHQ6IDEuNDU7CiAgcG9zaXRpb246IGZpeGVkOwogIHotaW5kZXg6IDkwMDAwMDAwOwogIHRvcDogMDsKICBsZWZ0OiAwOwogIHJpZ2h0OiAwOwogIHBhZGRpbmc6IC41ZW0gMWVtOwogIHRleHQtYWxpZ246IGNlbnRlcjsKICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOwogICAgIC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7CiAgICAgIC1tcy11c2VyLXNlbGVjdDogbm9uZTsKICAgICAgICAgIHVzZXItc2VsZWN0OiBub25lOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImEtYmV0dGVyLWJyb3dzZXIiXVtkYXRhLXZpc2liaWxpdHk9ImhpZGRlbiJdIHsKICBkaXNwbGF5OiBub25lOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImEtYmV0dGVyLWJyb3dzZXIiXSBjbG91ZGZsYXJlLWFwcC1tZXNzYWdlIHsKICBkaXNwbGF5OiBibG9jazsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJhLWJldHRlci1icm93c2VyIl0gYSB7CiAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7CiAgY29sb3I6ICNlYmViZjQ7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYS1iZXR0ZXItYnJvd3NlciJdIGE6aG92ZXIsCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYS1iZXR0ZXItYnJvd3NlciJdIGE6YWN0aXZlIHsKICBjb2xvcjogI2RiZGJlYjsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJhLWJldHRlci1icm93c2VyIl0gY2xvdWRmbGFyZS1hcHAtY2xvc2UgewogIGRpc3BsYXk6IGJsb2NrOwogIGN1cnNvcjogcG9pbnRlcjsKICBmb250LXNpemU6IDEuNWVtOwogIHBvc2l0aW9uOiBhYnNvbHV0ZTsKICByaWdodDogLjRlbTsKICB0b3A6IC4zNWVtOwogIGhlaWdodDogMWVtOwogIHdpZHRoOiAxZW07CiAgbGluZS1oZWlnaHQ6IDE7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYS1iZXR0ZXItYnJvd3NlciJdIGNsb3VkZmxhcmUtYXBwLWNsb3NlOmFjdGl2ZSB7CiAgLXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTsKICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImEtYmV0dGVyLWJyb3dzZXIiXSBjbG91ZGZsYXJlLWFwcC1jbG9zZTpob3ZlciB7CiAgb3BhY2l0eTogLjllbTsKICBjb2xvcjogI2ZmZjsKfQo=">
+    <style type="text/css" data-styled-components="FiaaB gTcftA caPIRE" data-styled-components-is-local="true">
+        /* sc-component-id: sc-keyframes-FiaaB */
+        @-webkit-keyframes FiaaB {
+            100% {
+                -webkit-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        @keyframes FiaaB {
+            100% {
+                -webkit-transform: rotate(360deg);
+                -ms-transform: rotate(360deg);
+                transform: rotate(360deg);
+            }
+        }
+
+        /* sc-component-id: sc-keyframes-gTcftA */
+        @-webkit-keyframes gTcftA {
+
+            10%,
+            90% {
+                -webkit-transform: translate3d(-1px, 0, 0);
+                -ms-transform: translate3d(-1px, 0, 0);
+                transform: translate3d(-1px, 0, 0);
+            }
+
+            20%,
+            80% {
+                -webkit-transform: translate3d(2px, 0, 0);
+                -ms-transform: translate3d(2px, 0, 0);
+                transform: translate3d(2px, 0, 0);
+            }
+
+            30%,
+            50%,
+            70% {
+                -webkit-transform: translate3d(-4px, 0, 0);
+                -ms-transform: translate3d(-4px, 0, 0);
+                transform: translate3d(-4px, 0, 0);
+            }
+
+            40%,
+            60% {
+                -webkit-transform: translate3d(4px, 0, 0);
+                -ms-transform: translate3d(4px, 0, 0);
+                transform: translate3d(4px, 0, 0);
+            }
+        }
+
+        @keyframes gTcftA {
+
+            10%,
+            90% {
+                -webkit-transform: translate3d(-1px, 0, 0);
+                -ms-transform: translate3d(-1px, 0, 0);
+                transform: translate3d(-1px, 0, 0);
+            }
+
+            20%,
+            80% {
+                -webkit-transform: translate3d(2px, 0, 0);
+                -ms-transform: translate3d(2px, 0, 0);
+                transform: translate3d(2px, 0, 0);
+            }
+
+            30%,
+            50%,
+            70% {
+                -webkit-transform: translate3d(-4px, 0, 0);
+                -ms-transform: translate3d(-4px, 0, 0);
+                transform: translate3d(-4px, 0, 0);
+            }
+
+            40%,
+            60% {
+                -webkit-transform: translate3d(4px, 0, 0);
+                -ms-transform: translate3d(4px, 0, 0);
+                transform: translate3d(4px, 0, 0);
+            }
+        }
+
+        /* sc-component-id: sc-keyframes-caPIRE */
+        @-webkit-keyframes caPIRE {
+            0% {
+                -webkit-transform: scale(.75);
+                -ms-transform: scale(.75);
+                transform: scale(.75);
+            }
+
+            20% {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+            }
+
+            40% {
+                -webkit-transform: scale(.75);
+                -ms-transform: scale(.75);
+                transform: scale(.75);
+            }
+
+            60% {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+            }
+
+            80% {
+                -webkit-transform: scale(.75);
+                -ms-transform: scale(.75);
+                transform: scale(.75);
+            }
+
+            100% {
+                -webkit-transform: scale(.75);
+                -ms-transform: scale(.75);
+                transform: scale(.75);
+            }
+        }
+
+        @keyframes caPIRE {
+            0% {
+                -webkit-transform: scale(.75);
+                -ms-transform: scale(.75);
+                transform: scale(.75);
+            }
+
+            20% {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+            }
+
+            40% {
+                -webkit-transform: scale(.75);
+                -ms-transform: scale(.75);
+                transform: scale(.75);
+            }
+
+            60% {
+                -webkit-transform: scale(1);
+                -ms-transform: scale(1);
+                transform: scale(1);
+            }
+
+            80% {
+                -webkit-transform: scale(.75);
+                -ms-transform: scale(.75);
+                transform: scale(.75);
+            }
+
+            100% {
+                -webkit-transform: scale(.75);
+                -ms-transform: scale(.75);
+                transform: scale(.75);
+            }
+        }
+    </style>
+    <style>
+        .glot-sub-active {
+            color: #1296ba !important;
+        }
+
+        .glot-sub-hovered {
+            color: #1296ba !important;
+        }
+
+        .glot-sub-clzz {
+            cursor: pointer;
+
+            line-Height: 1.2;
+            font-size: 32px;
+            color: #FFCC00;
+            background: rgba(17, 17, 17, 0.7);
+
+        }
+
+        .glot-sub-clzz:hover {
+            color: #1296ba !important;
+        }
+
+        .ej-trans-sub {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999999;
+            cursor: move;
+        }
+
+        .ej-trans-sub>span {
+            color: #3CF9ED;
+            font-size: 18px;
+            text-align: center;
+            padding: 0 16px;
+            line-height: 1.5;
+            background: rgba(32, 26, 25, 0.8);
+            text-shadow: 0px 1px 4px black;
+            padding: 0 8px;
+
+            line-Height: 1.2;
+            font-size: 22px;
+            color: #0CB1C7;
+            background: rgba(67, 65, 65, 0.7);
+
+        }
+
+        .ej-main-sub {
+            position: absolute;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 99999999;
+            cursor: move;
+            padding: 0 8px;
+        }
+
+        .ej-main-sub>span {
+            color: white;
+            font-size: 20px;
+            line-height: 1.5;
+            text-align: center;
+            background: rgba(32, 26, 25, 0.8);
+            text-shadow: 0px 1px 4px black;
+            padding: 2px 8px;
+
+            line-Height: 1.2;
+            font-size: 32px;
+            color: #FFCC00;
+            background: rgba(17, 17, 17, 0.7);
+
+        }
+
+        .ej-main-sub .glot-sub-clzz {
+            background: transparent !important
+        }
+
+        .tran-subtitle>.view-icon-edit-sub {
+            cursor: pointer;
+            padding-left: 10px;
+            top: 2px;
+            position: relative;
+        }
+
+        .tran-subtitle>.view-icon-edit-sub>svg {
+            width: 16px;
+            height: 16px;
+            pointer-events: none;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="parallax-container" data-parallax-img="images/parallax-img-2.jpg">
+        <div class="material-parallax parallax"><img src="https://livedemo00.template-help.com/wt_prod-22894/images/parallax-img-2.jpg
+        " alt="" style="display: block; transform: translate3d(-50%, 343px, 0px);"></div>
+        <div class="parallax-content section-xxl context-dark text-center">
+            <div class="container">
+                <div class="row justify-content-md-center">
+                    <div class="col-md-9 col-lg-8 col-xl-8 wow-outer">
+                        <div class="innset-xl-right-30 innset-xl-left-30">
+                            <div class="wow slideInDown" style="visibility: visible; animation-name: slideInDown;">
+                                <h3>Subscribe to Stay Informed</h3>
+                                <form class="rd-form rd-mailform rd-form-inline" data-form-output="form-output-global"
+                                    data-form-type="subscribe" method="post" action="bat/rd-mailform.php"
+                                    novalidate="novalidate">
+                                    <div class="form-wrap">
+                                        <input class="form-input form-control-has-validation" id="subscribe-form-email"
+                                            type="email" name="email" data-constraints="@Email @Required"><span
+                                            class="form-validation"></span>
+                                        <label class="form-label rd-input-label" for="subscribe-form-email">Your
+                                            E-mail</label>
+                                    </div>
+                                    <div class="form-button">
+                                        <button class="button button-primary button-lg" type="submit">Subscribe</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="js/core.min.js"></script>
+    <script src="js/script.js"></script>
+    <!-- coded by gel-->
+	
+	<!--LIVEDEMO_00 -->
+
+	<script type="text/javascript">
+	 var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-7078796-5']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();</script>
+	
+ <noscript>
+      
+    
+    
+    </noscript>
+    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start': new Date().getTime(),event:'gtm.js'});
+    var f=d.getElementsByTagName(s)[0],j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src='https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);})(window,document,'script','dataLayer','GTM-P9FT69');</script><!-- End Google Tag Manager -->
+<a href="#" id="ui-to-top" class="ui-to-top fa fa-angle-up active"></a><div id="eJOY__extension_root" class="eJOY__extension_root_class" style="all: unset;"></div><script type="text/javascript" id="">(function(){var b=document.location.search.split("aff\x3d")[1];if(b){var d=document.querySelectorAll("a"),c;for(c=0;c<d.length;c++){var a=d[c];0==a.href.indexOf("https://www.templatemonster.com")&&(0<a.href.indexOf("?")?a.href=a.href+"\x26aff\x3d"+b:a.href=a.href+"?aff\x3d"+b)}}b=document.location.search.split("i\x3d")[1];var e=document.location.search.split("pr_code\x3d")[1];if(b&&e)for(b=b.split("\x26")[0],d=document.querySelectorAll("a"),c=0;c<d.length;c++)a=d[c],0==a.href.indexOf("https://www.templatemonster.com")&&
+(a.href="https://www.templatehelp.com/preset/cart.php?act\x3dadd\x26templ\x3d"+b+"\x26pr_code\x3d"+e)})();</script>
+</body>
+
+</html>

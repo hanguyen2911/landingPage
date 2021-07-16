@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="theme-color" content="#000000" />
+        <meta name="description" content="Web site created using create-react-app" />
+        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+        <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+        <title>React App</title>
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/plugins/ua/ec.js"></script>
+        <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script>
+        <script type="text/javascript" async="" src="https://ssl.google-analytics.com/ga.js"></script>
+        <script src="apps/head/3ts2ksMwXvKRuG480KNifJ2_JNM.js"></script>
+        <script src="apps/body/4o300efCt-CXoq1JEC-sVReFz48.js">
+        </script>
+        <link rel="icon" href="https://livedemo00.template-help.com/wt_prod-22894/images/favicon.png"
+            type="image/x-icon">
+        <link rel="stylesheet" type="text/css"
+            href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,500,600,700,800,900,900i%7CRoboto:400%7CRubik:100,400,700">
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/style2.css">
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYCDEQ7CKZ"></script>
+        <script>
+            window.dataLayer = window.dataLayer || [];
+            function gtag() { dataLayer.push(arguments); }
+            gtag('js', new Date());
+
+            gtag('config', 'G-PYCDEQ7CKZ');
+        </script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+        <style>
+            .ie-panel {
+                display: none;
+                background: #212121;
+                padding: 10px 0;
+                box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, .3);
+                clear: both;
+                text-align: center;
+                position: relative;
+                z-index: 1;
+            }
+
+            html.ie-10 .ie-panel,
+            html.lt-ie-10 .ie-panel {
+                display: block;
+            }
+
+        </style>
+        <link rel="stylesheet"
+            href="data:text/css;charset=utf-8;base64,Y2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJhLWJldHRlci1icm93c2VyIl0gewogIGRpc3BsYXk6IGJsb2NrOwogIGJhY2tncm91bmQ6ICM0NTQ4NGQ7CiAgY29sb3I6ICNmZmY7CiAgbGluZS1oZWlnaHQ6IDEuNDU7CiAgcG9zaXRpb246IGZpeGVkOwogIHotaW5kZXg6IDkwMDAwMDAwOwogIHRvcDogMDsKICBsZWZ0OiAwOwogIHJpZ2h0OiAwOwogIHBhZGRpbmc6IC41ZW0gMWVtOwogIHRleHQtYWxpZ246IGNlbnRlcjsKICAtd2Via2l0LXVzZXItc2VsZWN0OiBub25lOwogICAgIC1tb3otdXNlci1zZWxlY3Q6IG5vbmU7CiAgICAgIC1tcy11c2VyLXNlbGVjdDogbm9uZTsKICAgICAgICAgIHVzZXItc2VsZWN0OiBub25lOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImEtYmV0dGVyLWJyb3dzZXIiXVtkYXRhLXZpc2liaWxpdHk9ImhpZGRlbiJdIHsKICBkaXNwbGF5OiBub25lOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImEtYmV0dGVyLWJyb3dzZXIiXSBjbG91ZGZsYXJlLWFwcC1tZXNzYWdlIHsKICBkaXNwbGF5OiBibG9jazsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJhLWJldHRlci1icm93c2VyIl0gYSB7CiAgdGV4dC1kZWNvcmF0aW9uOiB1bmRlcmxpbmU7CiAgY29sb3I6ICNlYmViZjQ7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYS1iZXR0ZXItYnJvd3NlciJdIGE6aG92ZXIsCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYS1iZXR0ZXItYnJvd3NlciJdIGE6YWN0aXZlIHsKICBjb2xvcjogI2RiZGJlYjsKfQoKY2xvdWRmbGFyZS1hcHBbYXBwLWlkPSJhLWJldHRlci1icm93c2VyIl0gY2xvdWRmbGFyZS1hcHAtY2xvc2UgewogIGRpc3BsYXk6IGJsb2NrOwogIGN1cnNvcjogcG9pbnRlcjsKICBmb250LXNpemU6IDEuNWVtOwogIHBvc2l0aW9uOiBhYnNvbHV0ZTsKICByaWdodDogLjRlbTsKICB0b3A6IC4zNWVtOwogIGhlaWdodDogMWVtOwogIHdpZHRoOiAxZW07CiAgbGluZS1oZWlnaHQ6IDE7Cn0KCmNsb3VkZmxhcmUtYXBwW2FwcC1pZD0iYS1iZXR0ZXItYnJvd3NlciJdIGNsb3VkZmxhcmUtYXBwLWNsb3NlOmFjdGl2ZSB7CiAgLXdlYmtpdC10cmFuc2Zvcm06IHRyYW5zbGF0ZVkoMXB4KTsKICAgICAgICAgIHRyYW5zZm9ybTogdHJhbnNsYXRlWSgxcHgpOwp9CgpjbG91ZGZsYXJlLWFwcFthcHAtaWQ9ImEtYmV0dGVyLWJyb3dzZXIiXSBjbG91ZGZsYXJlLWFwcC1jbG9zZTpob3ZlciB7CiAgb3BhY2l0eTogLjllbTsKICBjb2xvcjogI2ZmZjsKfQo=">
+        <style type="text/css" data-styled-components="FiaaB gTcftA caPIRE" data-styled-components-is-local="true">
+            /* sc-component-id: sc-keyframes-FiaaB */
+            @-webkit-keyframes FiaaB {
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+
+            @keyframes FiaaB {
+                100% {
+                    -webkit-transform: rotate(360deg);
+                    -ms-transform: rotate(360deg);
+                    transform: rotate(360deg);
+                }
+            }
+
+            /* sc-component-id: sc-keyframes-gTcftA */
+            @-webkit-keyframes gTcftA {
+
+                10%,
+                90% {
+                    -webkit-transform: translate3d(-1px, 0, 0);
+                    -ms-transform: translate3d(-1px, 0, 0);
+                    transform: translate3d(-1px, 0, 0);
+                }
+
+                20%,
+                80% {
+                    -webkit-transform: translate3d(2px, 0, 0);
+                    -ms-transform: translate3d(2px, 0, 0);
+                    transform: translate3d(2px, 0, 0);
+                }
+
+                30%,
+                50%,
+                70% {
+                    -webkit-transform: translate3d(-4px, 0, 0);
+                    -ms-transform: translate3d(-4px, 0, 0);
+                    transform: translate3d(-4px, 0, 0);
+                }
+
+                40%,
+                60% {
+                    -webkit-transform: translate3d(4px, 0, 0);
+                    -ms-transform: translate3d(4px, 0, 0);
+                    transform: translate3d(4px, 0, 0);
+                }
+            }
+
+            @keyframes gTcftA {
+
+                10%,
+                90% {
+                    -webkit-transform: translate3d(-1px, 0, 0);
+                    -ms-transform: translate3d(-1px, 0, 0);
+                    transform: translate3d(-1px, 0, 0);
+                }
+
+                20%,
+                80% {
+                    -webkit-transform: translate3d(2px, 0, 0);
+                    -ms-transform: translate3d(2px, 0, 0);
+                    transform: translate3d(2px, 0, 0);
+                }
+
+                30%,
+                50%,
+                70% {
+                    -webkit-transform: translate3d(-4px, 0, 0);
+                    -ms-transform: translate3d(-4px, 0, 0);
+                    transform: translate3d(-4px, 0, 0);
+                }
+
+                40%,
+                60% {
+                    -webkit-transform: translate3d(4px, 0, 0);
+                    -ms-transform: translate3d(4px, 0, 0);
+                    transform: translate3d(4px, 0, 0);
+                }
+            }
+
+            /* sc-component-id: sc-keyframes-caPIRE */
+            @-webkit-keyframes caPIRE {
+                0% {
+                    -webkit-transform: scale(.75);
+                    -ms-transform: scale(.75);
+                    transform: scale(.75);
+                }
+
+                20% {
+                    -webkit-transform: scale(1);
+                    -ms-transform: scale(1);
+                    transform: scale(1);
+                }
+
+                40% {
+                    -webkit-transform: scale(.75);
+                    -ms-transform: scale(.75);
+                    transform: scale(.75);
+                }
+
+                60% {
+                    -webkit-transform: scale(1);
+                    -ms-transform: scale(1);
+                    transform: scale(1);
+                }
+
+                80% {
+                    -webkit-transform: scale(.75);
+                    -ms-transform: scale(.75);
+                    transform: scale(.75);
+                }
+
+                100% {
+                    -webkit-transform: scale(.75);
+                    -ms-transform: scale(.75);
+                    transform: scale(.75);
+                }
+            }
+
+            @keyframes caPIRE {
+                0% {
+                    -webkit-transform: scale(.75);
+                    -ms-transform: scale(.75);
+                    transform: scale(.75);
+                }
+
+                20% {
+                    -webkit-transform: scale(1);
+                    -ms-transform: scale(1);
+                    transform: scale(1);
+                }
+
+                40% {
+                    -webkit-transform: scale(.75);
+                    -ms-transform: scale(.75);
+                    transform: scale(.75);
+                }
+
+                60% {
+                    -webkit-transform: scale(1);
+                    -ms-transform: scale(1);
+                    transform: scale(1);
+                }
+
+                80% {
+                    -webkit-transform: scale(.75);
+                    -ms-transform: scale(.75);
+                    transform: scale(.75);
+                }
+
+                100% {
+                    -webkit-transform: scale(.75);
+                    -ms-transform: scale(.75);
+                    transform: scale(.75);
+                }
+            }
+
+        </style>
+        <style>
+            .glot-sub-active {
+                color: #1296ba !important;
+            }
+
+            .glot-sub-hovered {
+                color: #1296ba !important;
+            }
+
+            .glot-sub-clzz {
+                cursor: pointer;
+                line-Height: 1.2;
+                font-size: 32px;
+                color: #FFCC00;
+                background: rgba(17, 17, 17, 0.7);
+            }
+
+            .glot-sub-clzz:hover {
+                color: #1296ba !important;
+            }
+
+            .ej-trans-sub {
+                position: absolute;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 9999999;
+                cursor: move;
+            }
+
+            .ej-trans-sub>span {
+                color: #3CF9ED;
+                font-size: 18px;
+                text-align: center;
+                padding: 0 16px;
+                line-height: 1.5;
+                background: rgba(32, 26, 25, 0.8);
+                text-shadow: 0px 1px 4px black;
+                padding: 0 8px;
+                line-Height: 1.2;
+                font-size: 22px;
+                color: #0CB1C7;
+                background: rgba(67, 65, 65, 0.7);
+            }
+
+            .ej-main-sub {
+                position: absolute;
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                z-index: 99999999;
+                cursor: move;
+                padding: 0 8px;
+            }
+
+            .ej-main-sub>span {
+                color: white;
+                font-size: 20px;
+                line-height: 1.5;
+                text-align: center;
+                background: rgba(32, 26, 25, 0.8);
+                text-shadow: 0px 1px 4px black;
+                padding: 2px 8px;
+                line-Height: 1.2;
+                font-size: 32px;
+                color: #FFCC00;
+                background: rgba(17, 17, 17, 0.7);
+            }
+
+            .ej-main-sub .glot-sub-clzz {
+                background: transparent !important
+            }
+
+            .tran-subtitle>.view-icon-edit-sub {
+                cursor: pointer;
+                padding-left: 10px;
+                top: 2px;
+                position: relative;
+            }
+
+            .tran-subtitle>.view-icon-edit-sub>svg {
+                width: 16px;
+                height: 16px;
+                pointer-events: none;
+            }
+            .login-form{
+                width: 37%;
+                margin: 15% auto;
+                height: 90%;
+                padding:27px;
+                border-radius:8px;
+                background:#eaeff1;
+                box-shadow: 0 8px 10px 0 rgba(0, 0, 0, 0.3);
+            }
+            .login-form h3{
+                font-size: 230%;
+                color:rgb(78, 78, 78);
+            }
+            .login-form:hover {
+                transform: scale(1.05)
+            }
+
+        </style>
+
+        <!-- start import file for payment -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+        </script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+        <link rel="stylesheet" href="css/payment.css" />
+    </head>
+
+    <body>
+        <div id="root" style="animation-duration: 500ms;">
+            <div ></div>
+        </div>
+            <div class="snackbars" id="form-output-global"></div>
+        <!--
+      This HTML file is a template.
+      If you open it directly in the browser, you will see an empty page.
+
+      You can add webfonts, meta tags, or analytics to this file.
+      The build step will place the bundled scripts into the <body> tag.
+
+      To begin the development, run `npm start` or `yarn start`.
+      To create a production bundle, use `npm run build` or `yarn build`.
+
+    <!-- coded by gel-->
+
+        <!--LIVEDEMO_00 -->
+        <!--
+	<script type="text/javascript">
+	 var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-7078796-5']);
+	  _gaq.push(['_trackPageview']);
+	  (function() {
+		var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+		ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'https://www') + '.google-analytics.com/ga.js';
+		var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();</script> -->
+
+        <!-- Messenger Plugin chat Code -->
+        <div id="fb-root"></div>
+
+        <!-- Your Plugin chat code -->
+        <div id="fb-customer-chat" class="fb-customerchat">
+        </div>
+        <script type="text/javascript" src="js/payment.js"> </script>
+
+        <script>
+            var chatbox = document.getElementById('fb-customer-chat');
+            chatbox.setAttribute("page_id", "103951891944749");
+            chatbox.setAttribute("attribution", "biz_inbox");
+            window.fbAsyncInit = function () {
+                FB.init({
+                    xfbml: true,
+                    version: 'v11.0'
+                });
+            };
+
+            (function (d, s, id) {
+                var js, fjs = d.getElementsByTagName(s)[0];
+                if (d.getElementById(id)) return;
+                js = d.createElement(s);
+                js.id = id;
+                js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+                fjs.parentNode.insertBefore(js, fjs);
+            }(document, 'script', 'facebook-jssdk'));
+        </script>
+
+        <script src="js/core.min.js"></script>
+        <script src="./js/index.js"></script>
+        <script>
+            $(document).ready(function () {
+                $('.owl-carousel').owlCarousel();
+            })
+        </script>
+    </body>
+    <script src="js/script.js"></script>
+    <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js'
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-P9FT69');
+    </script>
+    <!-- End Google Tag Manager -->
+    <a href="#" id="ui-to-top" class="ui-to-top fa fa-angle-up active"></a>
+    <div id="eJOY__extension_root" class="eJOY__extension_root_class" style="all: unset;"></div>
+    <script type="text/javascript" id="">
+        (function () {
+            var b = document.location.search.split("aff\x3d")[1];
+            if (b) {
+                var d = document.querySelectorAll("a"),
+                    c;
+                for (c = 0; c < d.length; c++) {
+                    var a = d[c];
+                    0 == a.href.indexOf("https://www.templatemonster.com") && (0 < a.href.indexOf("?") ? a.href = a.href + "\x26aff\x3d" + b : a.href = a.href + "?aff\x3d" + b)
+                }
+            }
+            b = document.location.search.split("i\x3d")[1];
+            var e = document.location.search.split("pr_code\x3d")[1];
+            if (b && e)
+                for (b = b.split("\x26")[0], d = document.querySelectorAll("a"), c = 0; c < d.length; c++) a = d[c], 0 == a.href.indexOf("https://www.templatemonster.com") &&
+                    (a.href = "https://www.templatehelp.com/preset/cart.php?act\x3dadd\x26templ\x3d" + b + "\x26pr_code\x3d" + e)
+        })();
+    </script>
+
+</html>
